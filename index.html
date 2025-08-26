@@ -14,6 +14,7 @@
     button { flex: 1; padding: 12px 16px; font-size: 16px; font-weight: 600; border-radius: 10px; border: 1px solid color-mix(in oklab, CanvasText 12%, Canvas); background: canvas; color: canvastext; cursor: pointer; }
     button:hover { background: color-mix(in oklab, Canvas 90%, CanvasText); }
     button:active { transform: translateY(1px); }
+    .hint { margin-top: 14px; font-size: 14px; color: color-mix(in oklab, CanvasText 60%, Canvas); text-align: center; }
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -39,6 +40,7 @@
       <button id="dec-btn" type="button" aria-label="Decrement">−</button>
       <button id="inc-btn" type="button" aria-label="Increment">+</button>
     </div>
+    <p class="hint">Use the buttons to change the value. This is a simple state demo.</p>
   </main>
 </body>
 </html>
